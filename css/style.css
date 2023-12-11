@@ -1,0 +1,515 @@
+body{
+    margin: auto;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/* HEADER */
+
+/* marquee img{
+    height: 50px;
+    width: 50px;
+}
+ */
+header{
+    margin: auto;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+    height: 75px;
+    width: 100%;
+   
+    background-color: white;
+    border-bottom: 5px solid black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.hbck{
+    margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    width: 85%;
+}
+
+nav{
+    width: 450px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+nav>section{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    
+    width: 90%;
+    height: 50px;
+    text-align: center;
+}
+
+nav>section>a{
+    color: black;
+    text-decoration: none;
+}
+
+nav>section:hover{
+    cursor: pointer;
+}
+
+
+/* FOOTER */
+
+footer{
+    padding-top: 50px;
+    background: rgb(255,255,255);
+    height: 500px;
+}
+
+
+/* BOX1 */
+
+
+.box1{
+    background-image: url(../img/cool-background.svg);
+    background-size: 100% 100%;
+    height: 920px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.tabla {
+    padding-top: 50px;  
+    display: grid;
+    margin: auto;
+    width: 75%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 55px 15px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "imagen intro"
+      "texto texto";
+      
+  }
+  
+.texto,.imagen,.intro{
+    border-radius: 25px;
+    border-style: outset;
+    border-width: 5px;
+    border-color: black;
+}
+
+
+  .texto { 
+    background-color: #242424;
+    grid-area: texto;
+
+    height:200px ;
+}
+
+.texto>section>p{
+    padding-left: 50px;
+    padding-right: 50px;
+    color: white;
+    font-size: 21px;
+}
+  
+  .imagen { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+    height: 300px;
+    background-color: #242424;
+    grid-area: imagen;
+    
+ }
+
+ .imagen>img{
+    margin: auto;
+    height: 100%;
+    mix-blend-mode: multiply;
+ }
+  
+  .intro { 
+    background-color: #242424;
+    grid-area: intro;
+    height: 200px;
+    margin-top: 100px; 
+}
+
+.intro>h1{
+
+    color: black;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.intro>p{
+    color: white;
+    font-size: 30px;
+    padding-left: 20px;
+}
+  
+
+.tabla1{
+    color: aliceblue;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+    "big side1"
+    "big side1"
+    "side2 side2";
+    width: 85%;
+    height: 750px;
+    gap: 30px;
+}
+
+/* trabajos */
+
+.boxt{
+    margin: auto;
+    height: 600px;
+    background-color: #3d3d3d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.boxt>h1{
+    margin-bottom: 0px ;
+    font-size: 45px;
+    color: aliceblue;
+}
+
+.boxt-t{
+    background-color: #242424;
+    margin: auto;
+    width: 85%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    border-style: inset;
+    border-color: black;
+    border-width: 10px;
+
+}
+
+.boxt-t>img{
+    margin: 20px;
+    width: 30%;
+    height: 200px;
+
+}
+
+
+
+
+/* INSIDE */
+
+
+
+.box2{
+    background-color: rgb(41, 41, 41);
+    height: 1000px;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.box2>p{
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 75px;
+    color: aliceblue;
+
+}
+
+
+/* skills */
+
+.skills{
+    color: aliceblue;
+    margin: auto;
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 85%;
+    height: 800px;
+    background-color: rgba(255, 255, 255, 0.055);
+    border-radius: 25px;
+    border-style: inset;
+    border-color: black;
+    border-width: 10px;
+    
+    
+}
+
+.skills>p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 75px;
+}
+
+.exp-container{
+    border-style: outset;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 25px;
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.exp-container:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+.exp-aside{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 75%;
+}
+
+
+.exp-bar{
+    background-color: rgba(0, 0, 0, 0.500);
+    width: 100%;
+    height: 25px;
+    border-style: inset;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 25px;
+    
+}
+
+.exp-1{
+    padding-right: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: rgb(49, 49, 49);
+    border-radius: 25px;
+    width: 80%;
+    height: 100%;
+}
+
+.exp-2{
+    padding-right: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: rgb(49, 49, 49);
+    border-radius: 25px;
+    width: 90%;
+    height: 100%;
+}
+
+.exp-3{
+    padding-right: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: rgb(49, 49, 49);
+    border-radius: 25px;
+    width: 70%;
+    height: 100%;
+}
+
+
+.exp-icon{
+
+   
+    height: 200px;
+    width: 90%;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.exp-icon>img{
+ 
+    height: 120px;
+    width: 120px;
+
+}
+
+
+.imginf{
+    text-align: center;
+    font-size: 75px;
+}
+
+
+
+.box3{
+    background-color: rgb(78, 78, 78);
+    height: 550px;
+    width: 100%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+/* contactame */
+
+.contacto {
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+    border-style: inset;
+    border-color: black;
+    border-width: 10px;
+    border-radius: 25px;
+    font-size: 20px;
+    background-color: #0000004f;
+    
+}
+
+h2 {
+    text-align: center;
+    color: black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    color: black;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #242424;
+}
+
+
+button>a{
+    color: white;
+    text-decoration:none;
+    font-weight: bolder;
+}
+
+
+/* LINKS */
+
+.tree{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1px;
+    width: 50px;
+    height: 175px;
+    right: 10px;
+    bottom: 40%;
+    position: fixed;
+}
+
+.tree>section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    text-align: center;
+    border: 3px solid black;
+    width: 50px;
+    height: 50px;
+}
+
+.tree>section>img{
+    height: 30px;
+}
+
+.tree>section:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    filter:drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.495));
+}
+
+/* BUTTON TOP */
+
+.btop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 5px;
+    bottom: 10px;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 3px solid black;
+    z-index: 5;
+}
+
+.btop>a>img{
+    height: 30px;
+}
+
+.btop:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    filter:drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.495));
+}
+
+
+/*  marquee */
+
+marquee{
+padding-top: 80px;
+}
+
+
+
